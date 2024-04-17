@@ -1,0 +1,26 @@
+
+
+SETTING UP CODE::BLOCKS FOR GRAPHICS
+ADDONG GRAPHICS.H IN CODE::BLOCKS
+
+####################################################################################################################################################################
+
+Other linker options:
+-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
+
+####################################################################################################################################################################
+
+Copy "graphics.h" and winbgim.h files in "include" folder of your compiler directory
+Copy "libbgi.a" to "lib" folder of your compiler directory
+In code::blocks open "Settings >> Compiler >>linker settings" click "Add" button in link libraries part and browse and select "libbgi.a" file
+In right part (i.e. other linker options) paste commands "-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32"
+Click OK
+
+####################################################################################################################################################################
+
+There was an error in "graphics.h" at line 302.
+Line 302 has been replaced by "int left=0, int top=0, int right=INT_MAX, int bottom=INT_MAX,"
+
+####################################################################################################################################################################
+
+File downloaded from https://sangams.com.np/
